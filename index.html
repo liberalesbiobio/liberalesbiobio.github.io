@@ -28,71 +28,458 @@
             color: white;
         }
 
+
+        /*FOOTER*/
+
+        footer {
+        background: #16222A;
+        background: -webkit-linear-gradient(59deg, #dc442c, #e02a0e);
+        background: linear-gradient(59deg, #dc442c, #e02a0e);
+        color: white;
+        margin-top:100px;
+        }
+
+        footer a {
+        color: #fff;
+        font-size: 14px;
+        transition-duration: 0.2s;
+        }
+
+        footer a:hover {
+        color: grey;
+        text-decoration: none;
+        }
+
+        .copy {
+        font-size: 12px;
+        padding: 10px;
+        border-top: 1px solid #FFFFFF;
+        }
+
+        .footer-middle {
+        padding-top: 2em;
+        color: white;
+        }
+
+
+        /*SOCİAL İCONS*/
+
+        /* footer social icons */
+
+        ul.social-network {
+        list-style: none;
+        display: inline;
+        margin-left: 0 !important;
+        padding: 0;
+        }
+
+        ul.social-network li {
+        display: inline;
+        margin: 0 5px;
+        }
+
+
+        /* footer social icons */
+
+        .social-network a.icoFacebook:hover {
+        background-color: #3B5998;
+        }
+
+        .social-network a.icoLinkedin:hover {
+        background-color: #007bb7;
+        }
+
+        .social-network a.icoFacebook:hover i,
+        .social-network a.icoLinkedin:hover i {
+        color: #fff;
+        }
+
+        .social-network a.socialIcon:hover,
+        .socialHoverClass {
+        color: #44BCDD;
+        }
+
+        .social-circle li a {
+        display: inline-block;
+        position: relative;
+        margin: 0 auto 0 auto;
+        -moz-border-radius: 50%;
+        -webkit-border-radius: 50%;
+        border-radius: 50%;
+        text-align: center;
+        width: 30px;
+        height: 30px;
+        font-size: 15px;
+        }
+
+        .social-circle li i {
+        margin: 0;
+        line-height: 30px;
+        text-align: center;
+        }
+
+        .social-circle li a:hover i,
+        .triggeredHover {
+        -moz-transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -ms--transform: rotate(360deg);
+        transform: rotate(360deg);
+        -webkit-transition: all 0.2s;
+        -moz-transition: all 0.2s;
+        -o-transition: all 0.2s;
+        -ms-transition: all 0.2s;
+        transition: all 0.2s;
+        }
+
+        .social-circle i {
+        color: #595959;
+        -webkit-transition: all 0.8s;
+        -moz-transition: all 0.8s;
+        -o-transition: all 0.8s;
+        -ms-transition: all 0.8s;
+        transition: all 0.8s;
+        }
+
+        .social-network a {
+        background-color: #F9F9F9;
+        }
+
+
     </style>
 <body>
-
+<!-- ################## header ############### -->
     <div class="container-fluid color">
-        <!-- <div class="container text-white"> -->
-            <!-- <div class="row justify-content-center"> -->
-                    <img src="imagenes/banner_alternativo.png" height="" class="img-fluid" alt="...">
-            <!-- </div> -->
-       <!-- </div> -->
+        <img src="imagenes/banner_alternativo.png" height="" class="img-fluid" alt="...">
     </div>
-
+<!-- ############### fin header ################-->
+    
+<!-- ############### NAVBAR ####################-->
     <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
         <a class="navbar-brand" href="#">
           <img src="imagenes/indice.png" width="30" height="30" class="d-inline-block align-top" alt="">
           <b class="colorletra">Liberales Biobío</b>
         </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
-          </button>
+        </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-              <a class="nav-item nav-link active" href="#"><i class="fa fa-home form-control-feedback"></i> Inicio <span class="sr-only">(current)</span></a>
-              <a class="nav-item nav-link" href="#"><i class="fa fa-user form-control-feedback"></i> Quienes Somos</a>
-              <a class="nav-item nav-link" href="#"><i class="fa fa-suitcase form-control-feedback"></i> Ideas</a>
-              <a class="nav-item nav-link" href="#"><i class="fa fa-user-plus form-control-feedback"></i> Participa</a>
-              <a class="nav-item nav-link" href="#"><i class="fa fa-edit form-control-feedback"></i> Contacto</a>
+              <a class="nav-item nav-link"  data-scroll href="#inicio"> <i class="fa fa-home form-control-feedback"></i> Inicio <span class="sr-only">(current)</span></a>
+              <a class="nav-item nav-link"  data-scroll href="#qsomos"> <i class="fa fa-user form-control-feedback"></i> Quienes Somos</a>
+              <a class="nav-item nav-link"  data-scroll href="#ideas"> <i class="fa fa-suitcase form-control-feedback"></i> Ideas</a>
+              <a class="nav-item nav-link"  data-scroll href="#participa"> <i class="fa fa-user-plus form-control-feedback"></i> Participa</a>
+              <a class="nav-item nav-link"  data-scroll href="#contacto"> <i class="fa fa-edit form-control-feedback"></i> Contacto</a>
             </div>
           </div>
     </nav>
-    <div class="container-fluid">
-        <h1 class="display-4 text-center lead"> Bienvenidos</h1>
-    <div class="container py-5">
-        <div class="row">
-            <div class="col-sm-12 col-md-12 col-lg-4">
-                <img src="imagenes/imagen1.jpg" class="card-img-top img-fluid" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Coordinador PL en el Biobío</h5>
-                  <p class="card-text"> Con agrado comunicamos que Esteban Guzmán, comunicador digital, activista de derechos LGBT y actualmente ... </p>
-                  <a href="#" class="btn boton text-white">Leer más</a>
+<!-- ############### fin Navbar ###############-->
+
+
+<!-- ################ Inicio sección inicio ############ -->
+<section id="inicio">
+    <div class="container-fluid"> 
+        <div class="container py-5">
+            <h1 class="display-4 text-center lead"> Bienvenidos</h1>
+                 <div class="row">
+                    <div class="col-sm-12 col-md-12 col-lg-4">
+                        <img src="imagenes/imagen_1.jpg" class="card-img-top img-fluid" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Coordinador PL en el Biobío</h5>
+                                    <p class="card-text"> Con agrado comunicamos que Esteban Guzmán, comunicador digital, activista de derechos LGBT y actualmente ... </p>
+                                    <!-- mi invento -->
+                                    <!-- Button trigger modal -->
+                                    <button type="button" class="btn boton text-white" data-toggle="modal" data-target="#primer_modal">
+                                        Leer más
+                                    </button>
+                                    <!-- Modal -->
+                                        <div class="modal fade" id="primer_modal" tabindex="-1" role="dialog" aria-labelledby="primer_modal" aria-hidden="true">
+                                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="primer_modal">Coordinador PL en el Biobío</h5>
+                                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                <span aria-hidden="true">&times;</span>
+                                                            </button>
+                                                    </div>
+                                                        <div class="modal-body">
+                                                            <img src="imagenes/imagen_1.jpg" class="img-fluid py-2" alt="...">
+                                                            <p>Con agrado comunicamos que Esteban Guzmán, comunicador digital, 
+                                                            activista de derechos LGBT y actualmente corresponsal en América Latina 
+                                                            para el Washintong Blade ha sido designado por la Directiva Nacional 
+                                                            del Partido Liberal como nuestro coordinador de cara a los desafíos a los 
+                                                            que nos veremos enfrentados como región.</p>
+                                                            <p>En esta línea Destacamos el Liderazgo de Esteban y del saliente coordinador, 
+                                                            Osmán Vásquez Varela, quién deja un legado de fraternidad y trabajo constante 
+                                                            tanto en las instancias nacionales y regionales del partido así como la 
+                                                            encomiable gestión en el comunal del Frente Amplio en la comuna de Hualpén.</p>
+                                                            <p>Queremos además destacar hitos en la carrera política y de activismo 
+                                                            de nuestro coordinador, indicando que fue el primer activista LGTB en 
+                                                            ser recibido en la Municipalidad de Concepción donde logró que se 
+                                                            aprobara una ordenanza municipal contra la discriminación y que fuera 
+                                                            iluminado el frontis del edificio con los colores del arcoíris en el día 
+                                                            internacional contra la homofobía y transfobía.</p>
+                                                            <p>Además consiguió que se izara la  bandera LGBT en el Gobierno Regional 
+                                                            del Biobío. Asimismo, Guzmán fue el primer activista gay de regiones en sostener 
+                                                            reuniones bilaterales con presidentes de la República (Sebastián Piñera 
+                                                            y Michelle Bachelet). </p>  
+                                                            <p>  Ha llevado y liderado un emblemático caso a la Corte Suprema de Chile, 
+                                                            en el que la máxima autoridad judicial del país ha reconoció el derecho a 
+                                                            Vladimir Urrutia para decidir dónde deben descansar los restos de su pareja 
+                                                            fallecida, pese a que nunca pudieron legalizar sus 12 años de relación pues 
+                                                            al momento de su deceso, en Chile, no existía ninguna legislación que 
+                                                            protegiera a las familias homoparentales.</p>
+                                                        </div>
+                                                            <div class="modal-footer">
+                                                                <button type="button" class="btn boton text-white" data-dismiss="modal">
+                                                                    Cerrar Nota
+                                                                </button>
+                                                            </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                            </div>
+                    </div>
+
+                    <div class="col-sm-12 col-md-12 col-lg-4">
+                        <img src="imagenes/imagen2.jpg" class="card-img-top img-fluid" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Campaña Solidaria</h5>
+                                    <p class="card-text"> El PL Biobío colabora y apoya la campaña solidaria por un comedor social en la comuna de Hualpén ... </p>
+                                    <!-- mi invento -->
+                                    <!-- Button trigger modal -->
+                                    <button type="button" class="btn boton text-white" data-toggle="modal" data-target="#segundo_modal">
+                                        Leer más
+                                    </button>
+                                    <!-- Modal -->
+                                        <div class="modal fade" id="segundo_modal" tabindex="-0" role="dialog" aria-labelledby="segundo_modal" aria-hidden="true">
+                                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="segundo_modal">Campaña Solidaria</h5>
+                                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                <span aria-hidden="true">&times;</span>
+                                                            </button>
+                                                    </div>
+                                                        <div class="modal-body">
+                                                            <img src="imagenes/imagen2.jpg" class="img-fluid py-2" alt="...">
+                                                            <p>El PL Biobío colabora y apoya la campaña solidaria por un comedor social en la comuna de Hualpén,
+                                                                esta actividad viene a contribuir con un grano de arena a la gestión del comedor, el cual en 
+                                                                estos momentos se encuentra con dificultades producto de la contingencia nacional COVID-19.
+                                                            </p>
+
+                                                            <p>Es en esta línea que como militantes liberales nos hemos puesto una meta con esa cruzada solidaria
+                                                                generando una campaña de apoyo a este comedor, pues los adultos mayores debido a la cuarentena
+                                                                no pueden seguir asistiendo a comer diariamente  al comedor social.
+                                                            </p>
+
+                                                            <p> Por ende, se inicio la convocatoria a la comunidad para que juntos podamos ayudar 
+                                                                a las abuelas y abuelos del Comedor Social "Madre Teresa de Calcuta" 
+                                                                de Hualpén, cuyo recinto debido a la pandemia del coronavirus se encuentra temporalmente 
+                                                                cerrado, dejando de proveer de alimentación a estos adultos mayores.
+                                                            </p>
+
+                                                            <p> Y recuerda, si te interesa realizar una donación no dudes en comunicarte con nosotros 
+                                                                a través de nuestros medios de contacto</p>
+                                                        </div>
+                                                            <div class="modal-footer">
+                                                                <button type="button" class="btn boton text-white" data-dismiss="modal">
+                                                                    Cerrar Nota
+                                                                </button>
+                                                            </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                            </div>
+                    </div>
+
+                    <div class="col-sm-12 col-md-12 col-lg-4">
+                        <img src="imagenes/imagen3.jpg" class="card-img-top img-fluid" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Firma por el Partido Liberal</h5>
+                                    <p class="card-text"> Sigue estos sencillos pasos y podrás formar parte del Partido Liberal de Chile ... </p>
+                                    <!-- mi invento -->
+                                    <!-- Button trigger modal -->
+                                    <button type="button" class="btn boton text-white" data-toggle="modal" data-target="#tercer_modal">
+                                        Leer más
+                                    </button>
+                                    <!-- Modal -->
+                                        <div class="modal fade" id="tercer_modal" tabindex="-1" role="dialog" aria-labelledby="tercer_modal" aria-hidden="true">
+                                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="tercer_modal">Firma por el PL con estos sencillos pasos</h5>
+                                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                <span aria-hidden="true">&times;</span>
+                                                            </button>
+                                                    </div>
+                                                        <div class="modal-body">
+                                                            <img src="imagenes/imagen3.jpg" class="img-fluid py-2" alt="...">
+                                                            <img src="imagenes/imagen4.jpg" class="img-fluid py-2" alt="...">
+                                                            <img src="imagenes/imagen5.jpg" class="img-fluid py-2" alt="...">
+                                                            <img src="imagenes/imagen6.jpg" class="img-fluid py-2" alt="...">
+                                                            
+                                                        </div>
+                                                            <div class="modal-footer">
+                                                                <button type="button" class="btn boton text-white" data-dismiss="modal">
+                                                                    Cerrar Nota
+                                                                </button>
+                                                            </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                            </div>
+                    </div>
+
                 </div>
-              </div>
-              <div class="col-sm-12 col-md-12 col-lg-4">
-                <img src="imagenes/imagen2.jpg" class="card-img-top img-fluid" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Campaña Solidaria</h5>
-                  <p class="card-text">El PL Biobío colabora y apoya la campaña solidaria por un comedor social en la comuna de Hualpen ...</p>
-                  <a href="#" class="btn boton text-white">Leer más</a>
-                </div>
-              </div>
-              <div class="col-sm-12 col-md-12 col-lg-4">
-                <img src="imagenes/imagen3.jpg" class="card-img-top img-fluid" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Participa en el PL</h5>
-                  <p class="card-text">Nuestras ideas nos mueven, entérate y motivate acerca de las actividades del PL en la región ...</p>
-                  <a href="#" class="btn boton text-white">Leer más</a>
-                </div>
-              </div>
         </div>
     </div>
-    </div>
+</section>
 
-<section>
+<!-- ############# fin sección inicio #############-->
+
+
+<!-- ############# Inicio sección quienes somos-->
+
+<section id="qsomos">
     <div class="container-fluid">
-        <h1 class="display-4 text-center lead"> Nuestros ideales</h1>
+        <br><br>
+        <h1 class="display-4 text-center lead"> Quienes somos</h1>
+        <p class="card-text text-center"> Para conocer quienes somos, conózcanos en base a los trabajos que realizamos como partido en las distintas instancias a nivel regional. </p>
         <div class="container py-5">
+            <!-- Three columns of text below the carousel -->
+        <div class="row center">
+            <div class="col-sm-12 col-md-12 col-lg-4">
+              <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+              <h2>Partido Liberal Biobío</h2>
+              <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, ratione.
+              </p>
+                    <div class="card-body">
+                            <!-- mi invento -->
+                            <!-- Button trigger modal -->
+                            <br>
+                            <button type="button" class="btn boton text-white" data-toggle="modal" data-target="#tercer_modal">
+                                Leer más
+                            </button>
+                            <!-- Modal -->
+                                <div class="modal fade" id="tercer_modal" tabindex="-1" role="dialog" aria-labelledby="tercer_modal" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="tercer_modal">Firma por el PL con estos sencillos pasos</h5>
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                            </div>
+                                                <div class="modal-body">
+                                                    <img src="imagenes/imagen3.jpg" class="img-fluid py-2" alt="...">
+                                                    <img src="imagenes/imagen4.jpg" class="img-fluid py-2" alt="...">
+                                                    <img src="imagenes/imagen5.jpg" class="img-fluid py-2" alt="...">
+                                                    <img src="imagenes/imagen6.jpg" class="img-fluid py-2" alt="...">
+                                                    
+                                                </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn boton text-white" data-dismiss="modal">
+                                                            Cerrar Nota
+                                                        </button>
+                                                    </div>
+                                        </div>
+                                    </div>
+                                </div>
+                    </div>
+            </div><!-- /.col-lg-4 -->
+            <div class="col-sm-12 col-md-12 col-lg-4">
+              <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+              <h2>Frente Amplio Regional</h2>
+              <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, illo!
+              </p>
+                    <div class="card-body">
+                            <!-- mi invento -->
+                            <!-- Button trigger modal -->
+                            <br>
+                            <button type="button" class="btn boton text-white" data-toggle="modal" data-target="#tercer_modal">
+                                Leer más
+                            </button>
+                            <!-- Modal -->
+                                <div class="modal fade" id="tercer_modal" tabindex="-1" role="dialog" aria-labelledby="tercer_modal" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="tercer_modal">Firma por el PL con estos sencillos pasos</h5>
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                            </div>
+                                                <div class="modal-body">
+                                                    <img src="imagenes/imagen3.jpg" class="img-fluid py-2" alt="...">
+                                                    <img src="imagenes/imagen4.jpg" class="img-fluid py-2" alt="...">
+                                                    <img src="imagenes/imagen5.jpg" class="img-fluid py-2" alt="...">
+                                                    <img src="imagenes/imagen6.jpg" class="img-fluid py-2" alt="...">
+                                                    
+                                                </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn boton text-white" data-dismiss="modal">
+                                                            Cerrar Nota
+                                                        </button>
+                                                    </div>
+                                        </div>
+                                    </div>
+                                </div>
+                    </div>
+            </div><!-- /.col-lg-4 -->
+            <div class="col-sm-12 col-md-12 col-lg-4">
+              <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+              <h2>Que Chile Decida</h2>
+              <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit, nobis?
+              </p>
+                    <div class="card-body">
+                            <!-- mi invento -->
+                            <!-- Button trigger modal -->
+                            <br>
+                            <button type="button" class="btn boton text-white" data-toggle="modal" data-target="#tercer_modal">
+                                Leer más
+                            </button>
+                            <!-- Modal -->
+                                <div class="modal fade" id="tercer_modal" tabindex="-1" role="dialog" aria-labelledby="tercer_modal" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="tercer_modal">Firma por el PL con estos sencillos pasos</h5>
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                            </div>
+                                                <div class="modal-body">
+                                                    <img src="imagenes/imagen3.jpg" class="img-fluid py-2" alt="...">
+                                                    <img src="imagenes/imagen4.jpg" class="img-fluid py-2" alt="...">
+                                                    <img src="imagenes/imagen5.jpg" class="img-fluid py-2" alt="...">
+                                                    <img src="imagenes/imagen6.jpg" class="img-fluid py-2" alt="...">
+                                                    
+                                                </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn boton text-white" data-dismiss="modal">
+                                                            Cerrar Nota
+                                                        </button>
+                                                    </div>
+                                        </div>
+                                    </div>
+                                </div>
+                    </div>
+            </div><!-- /.col-lg-4 -->
+          </div><!-- /.row -->
+        </div>
+    </div>
+</section>
+
+<!-- ############# fin quienes somos ###########-->
+
+<!-- ############ inicio de las ideas ############-->
+<section id="ideas">
+    <div class="container-fluid">
+        <div class="container py-5">
+          <h1 class="display-4 text-center lead"> Nuestros ideales</h1>
             <!-- Carrousel-->
             <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
@@ -153,16 +540,81 @@
     </div>
 </section>
 
-    <div class="container-fluid bg-secondary py-5">
-      <div class="container">
+<!-- ##############fin de ideas ################-->
 
+
+<!--  ################# inicio del footer #############-->
+<section id="contacto">
+<footer class="mainfooter" role="contentinfo">
+    <div class="footer-middle">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 col-sm-6">
+          <!--Column1-->
+          <div class="footer-pad">
+            <h4>Sitios de Interés</h4>
+            <br>
+            <ul class="list-unstyled">
+              <li><a href="#"></a></li>
+              <li><i class="fa fa-group form-control-feedback"></i><a href="https://partidos.servel.cl/afiliacionCU">   Afiliación electrónica al PL</a></li>
+              <li><i class="fa fa-download form-control-feedback"></i><a href="http://www.losliberales.cl/quienes-somos/descargas/">  Descarga Multimedia Liberal</a></li>
+              <li><i class="fa fa-map-signs form-control-feedback"></i><a href="http://www.losliberales.cl/manifiesto/">  Nuestro Manifiesto</a></li>
+              <li><i class="fa fa-bookmark form-control-feedback"></i><a href="http://www.losliberales.cl/category/libreria/">  Lecturas Liberales</a></li>
+              <li><i class="fa fa-question form-control-feedback"></i><a href="http://www.losliberales.cl/preguntasfrecuentes/">  Preguntas Frecuentes</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <!--Column1-->
+          <div class="footer-pad">
+            <h4>Web Amigas</h4>
+            <br>
+            <ul class="list-unstyled">
+              <li><i class="fa fa-search form-control-feedback"></i><a href="https://www.portaltransparencia.cl/PortalPdT/pdtta?codOrganismo=PP032">  Transparencia PL</a></li>
+              <li><i class="fa fa-rss form-control-feedback"></i><a href="https://www.vlado.cl">  Web de Vlado Mirosevic</a></li>
+              <li><i class="fa fa-university form-control-feedback"></i><a href="https://fundacionbalmaceda.cl/internacional-liberal/">  Fundación Balmaceda</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+        </div>
+          <div class="col-md-3">
+              <h4>Síguenos</h4>
+              <br>
+              <ul class="social-network social-circle">
+               <li><a href="https://www.facebook.com/liberalbiobio" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+               <li><a href="https://twitter.com/liberalesbiobio?lang=es" class="icoTwitter" title="twitter"><i class="fa fa-twitter"></i></a></li>
+               <li><a href="https://www.instagram.com/liberales_chile/" class="icoInstagram" title="Linkedin"><i class="fa fa-instagram"></i></a></li>
+               <li><a href="#" class="icoYoutube" title="Youtube"><i class="fa fa-youtube"></i></a></li>
+              </ul>				
+          </div>
       </div>
+      <br>
+      <div class="row">
+          <div class="col-md-12 copy">
+              <p class="text-center">&copy; Copyright 2020 - Fdiazinformatico - All rights reserved.</p>
+          </div>
+      </div>
+  
+  
     </div>
+    </div>
+  </footer>
+</section>
 
+<!-- ################ fin del footer ################-->
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="js/bootstrap.min.js"></script>
+    <!-- Get patch fixes within a minor version -->
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0/dist/smooth-scroll.polyfills.min.js"></script>
+    <script>
+      var scroll = new SmoothScroll('a[href*="#"]',{
+        speed:1500,
+      });
+    </script>
+
   </body>
 </html>
